@@ -1,0 +1,24 @@
+{
+    "products":[
+        {
+            "name":"cini-minis",
+            "price":"3.23$"
+        },
+        {
+            "name":"granola",
+            "price":"3.73$"
+        },
+        {
+            "name":"nesquik",
+            "price":"3.23$"
+        },
+        {
+            "name":"juice",
+            "price":"3.23$"
+        },
+        {
+            "name":"milka-oreo",
+            "price":"3.23$"
+        }
+    ]
+}
