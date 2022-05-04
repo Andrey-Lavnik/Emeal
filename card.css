@@ -1,0 +1,1021 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -200px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 18px;
+    color: #252C3B;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 16px;
+    color: #475062;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.all_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.img_1{
+    background-image: url(images/circle_1.svg);
+    background-position-x: 97%;
+    background-position-y: 5%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-top: 11px;
+    background-color: #FF83A1;
+    width: 90%;
+    height: 30%;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+
+
+.card{
+    position: absolute;
+    left: 26px;
+    top: 114px;
+    width: 30%;
+}
+
+
+.card_num{
+    position: absolute;
+    left: 39px;
+    top: 70px;
+    font-size: 20px;
+    color:#FFFFFF; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_name{
+    position: absolute;
+    left: 39px;
+    top: 110px;
+    font-size: 20px;
+    color:#FFFFFF; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_date{
+    position: absolute;
+    left: 39px;
+    top: 30px;
+    font-size: 20px;
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img_2{
+    background-image: url(images/circle_2.svg);
+    background-position-x: 97%;
+    background-position-y: 5%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-top: 11px;
+    background-color: #4BA7DB;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+
+
+.card_2{
+    position: absolute;
+    text-align: center;
+    left: 188px;
+    top: 114px; 
+   width: 30%;
+   margin-left: 110px;
+}
+
+.card_num2{
+    position: absolute;
+    left: 60px;
+    top: 70px;
+    font-size: 20px;
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_name2{
+    position: absolute;
+    left: 60px;
+    top: 110px;
+    font-size: 20px;
+    color:#FFFFFF; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_date2{
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    font-size: 20px;
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img_3{
+    background-image: url(images/circle_1.svg);
+    background-position-x: 97%;
+    background-position-y: 5%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-top: 11px;
+    background-color: #faf623;
+    width: 90%;
+    height: 30%;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+
+
+.card_3{
+    position: absolute;
+    text-align: center;
+    left: 475px;
+    top: 114px;
+    width: 30%;
+    margin-left: 110px;
+}
+
+.card_num3{
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    font-size: 20px;
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_name3{
+    position: absolute;
+    left: 70px;
+    top: 110px;
+    font-size: 20px;
+    color:#FFFFFF; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_date3{
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    font-size: 20px;
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.add_new{
+    width: 112px;
+    height: 31px;
+    left: 26px;
+    top: 525px;
+    background: #7DCAF6;
+    border-radius: 4px;
+    background-image: url(images/plus.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95px;
+    background-position-y: 9px;
+    border: none;
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 320px;
+    margin-left:30px
+}
+
+.others{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 16px;
+    color: #475062;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.all_banks1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    border-bottom: 0.5px solid #CED2DA;
+}
+
+.all_banks2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    border-bottom: 0.5px solid #CED2DA;
+    margin-bottom: 150px;
+}
+
+.bank_text1{
+    margin-top: 40px;
+    margin-right: 700px; 
+}
+
+.bank_text2{
+    margin-top: 50px;
+    margin-right: 780px;
+}
+
+
+.bank1{
+    border-radius: 50px;
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.bank2{
+    border-radius: 50px;
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+.bank_name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 14px;
+    color: #475062;
+    margin-bottom: 8px;
+}
+
+.bank_number{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 12px;
+    color: #6E7A90;
+}
+
+.crest1{
+   margin-top: 45px;
+   border: 0.5px solid #9BA3B3;
+box-sizing: border-box;
+border-radius: 2px;
+margin-bottom: 90px; 
+}
+
+.crest2{
+    margin-top: 45px;
+    border: 0.5px solid #9BA3B3;
+box-sizing: border-box;
+border-radius: 2px;
+margin-bottom: 90px;
+}
+
+.name_bank{
+    width: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.names_of_banks{
+    margin-bottom: 200px;
+}
+
+.processed{
+    color:#FFFFFF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: #475062;
+    border-radius: 8px;
+    margin-left:  350px;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 100px;
+    border:none
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top:0;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+.modal.active{
+    transform: translateY(0%)scale(100%);
+    background-color: rgba(0, 0, 0, .5);
+}
+.modal_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.modal_body{
+    margin: auto;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 50px 15px;
+    position: relative;
+}
+.modal_body p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.click{
+    padding-bottom: 20px;
+    cursor: default
+}
+.continue{
+    cursor: default
+}
+.modal_body button{
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-size: 16px;
+    border: none;
+    color: #ffff;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: black;
+}
+.modal_close{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 21px;
+}
+.sending{
+   font-size: 30px; 
+}
+.code{
+    padding-top: 25px;
+    line-height: 20px;
+}
+
+
+.promotion__descr span{
+    font-weight:700;
+    font-size:26px
+}
+.promotion__timer{
+    width:50%;
+    display: flex;
+}
+.promotion__timer .title{
+    text-align: center;
+    margin-top: 30px;
+}
+.promotion__timer .timer{
+    margin-top:20px;
+    padding-left:95px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+.promotion__timer .timer__block{
+    width:102px;
+    height:120px;
+    background:#fff;
+    box-shadow:0 4px 20px rgba(0,0,0,.25);
+    font-size:16px;
+    font-weight:300;
+    text-align:center;
+}
+.promotion__timer .timer__block span{
+    display:block;
+    margin-top:20px
+    ;margin-bottom:5px;
+    font-size:56px;
+    font-weight:700
+}
+
+.sell_but{ 
+    width: 150px; 
+    cursor: pointer; 
+    margin-top: 80px; 
+    margin-bottom: 70px; 
+    margin-left: 70px; 
+    background-color: red; 
+    border-radius: 15px; 
+    border: none; 
+    color: white; 
+    font-size: 20px; 
+    padding: 30px 30px; 
+}
+
+
+
+@media(max-width:768px){
+    h1{
+        margin-left: 90px;
+    }
+    h2{
+        margin-left: 100px;
+    }
+    .all_card{
+        margin-left: 70px;
+    }
+    .card_num{
+        left: 20px;
+        top: 60px;
+        font-size: 15px;
+    }
+    .card_name{
+        left: 20px;
+        top: 90px;
+        font-size: 15px;
+    }
+    .card_date{
+        left: 20px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .card_num2{
+        left: 30px;
+        top: 60px;
+        font-size: 15px;
+    }  
+    .card_name2{
+        left: 30px;
+        top: 90px;
+        font-size: 15px;
+    } 
+    .card_date2{
+        left: 30px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .card_num3{
+        left: 30px;
+        top: 60px;
+        font-size: 15px;
+    }
+    
+    .card_name3{
+        left: 30px;
+        top: 90px;
+        font-size: 15px;
+    }
+    
+    .card_date3{
+        left: 30px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .card_2{
+       margin-left: 50px;
+    }
+    .card_3{
+        margin-left:-15px;
+    }
+    .add_new{
+        margin-left:100px;
+    }
+    .others{
+        margin-left:100px;
+    }
+    .all_banks1{
+        margin-left: 100px;
+        border-bottom: 0.5px solid #CED2DA;
+    }
+    .all_banks2{
+        margin-left: 100px;
+        border-bottom: 0.5px solid #CED2DA;
+        margin-bottom: 150px;
+    }
+    .bank_text1{
+        text-align: 3px;
+        margin-top: 40px;
+        margin-left: 20px; 
+    }
+    
+    .bank_text2{
+        margin-left: 20px;
+        
+    }
+    .crest1{
+        position: absolute;
+        top: 810px;
+        left: 700px ;
+     }
+     .crest2{
+        position: absolute;
+        top: 1000px;
+        left: 700px ;
+     }
+     .names_of_banks{
+        margin-left: 100px;
+        margin-bottom: 100px;
+    }
+     .name_bank{
+        width: 90px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .processed{
+        font-size: 20px;
+        margin-left:  270px;
+        margin-bottom: 100px;
+        width: 250px;
+        height: 100px;
+    }
+}
+@media(max-width:425px){
+    h1{
+        margin-top: 5px;
+        margin-left: 250px;
+        line-height: 25px;
+    }
+     h2{
+        margin-left: 100px;
+        font-size: 25px;
+    } 
+    .promotion__timer .timer__block{
+       margin-bottom: -30px;
+    }
+    .all_card{
+        margin-left: 70px;
+    } 
+    .card{
+        width: 60%;
+        left: 30px;
+    }
+    .card_2{
+        width: 60%;
+        left: 170px;
+    }
+    .card_3{
+        width: 60%;
+        left: 435px;
+    }
+    .add_new{
+        width: 110px;
+        height: 41px;
+        font-size: 14px;
+    }
+    .card_num{
+        left: 20px;
+        top: 60px;
+        font-size: 15px;
+    }
+    .card_name{
+        left: 20px;
+        top: 90px;
+        font-size: 15px;
+    }
+    .card_date{
+        left: 20px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .card_num2{
+        left: 30px;
+        top: 60px;
+        font-size: 15px;
+    }  
+    .card_name2{
+        left: 30px;
+        top: 90px;
+        font-size: 15px;
+    } 
+    .card_date2{
+        left: 30px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .card_num3{
+        left: 30px;
+        top: 60px;
+        font-size: 15px;
+    }
+    
+    .card_name3{
+        left: 30px;
+        top: 90px;
+        font-size: 15px;
+    }
+    
+    .card_date3{
+        left: 30px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .card_2{
+       margin-left: 45px;
+    }
+    .card_3{
+        margin-left:-26px;
+    }
+    .add_new{
+        margin-left:100px;
+        background-position-y: 12px;
+    }
+    .others{
+        margin-left:100px;
+    }
+    .all_banks1{
+        margin-left: 100px;
+        border-bottom: 0.5px solid #CED2DA;
+    }
+    .all_banks2{
+        margin-left: 100px;
+        border-bottom: 0.5px solid #CED2DA;
+        margin-bottom: 150px;
+    }
+    .bank_text1{
+        line-height: 16px;
+        margin-top: 40px;
+        margin-left: 20px; 
+    }
+    
+    .bank_text2{
+        margin-left: 20px;
+        
+    }
+    .crest1{
+        position: absolute;
+        top: 870px;
+        left: 650px ;
+     }
+     .crest2{
+        position: absolute;
+        top: 1090px;
+        left: 650px ;
+     }
+     .names_of_banks{
+        margin-left: 100px;
+        margin-bottom: 100px;
+    }
+     .name_bank{
+        width: 80px;
+        margin-right: 18px;
+        cursor: pointer;
+    }
+    .processed{
+        font-size: 20px;
+        margin-left:  220px;
+        margin-bottom: 80px;
+        width: 250px;
+        height: 100px;
+    } 
+    .promotion__timer .title{
+        margin-left: 80px;
+        font-weight: bold;
+    }
+    .promotion__descr span{
+    font-weight:700;
+    font-size:26px;
+    padding: 5px;
+    }
+    .sell_but{ 
+        width: 150px; 
+        margin-top: 110px; 
+        margin-bottom: 70px; 
+        margin-left: 30px; 
+        background-color: red; 
+        border-radius: 15px; 
+        border: none; 
+        color: white; 
+        font-size: 20px; 
+        padding: 20px 20px; 
+    }
+}
+@media(max-width:425px){
+    .sell_but{
+        margin-left: 5px;
+    }
+    .card_num{
+        left: 20px;
+        top: 55px;
+        font-size: 15px;
+    }
+    .card_name{
+        left: 20px;
+        top: 80px;
+        font-size: 15px;
+    }
+    .card_date{
+        left: 20px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .card_num2{
+        left: 30px;
+        top: 55px;
+        font-size: 15px;
+    }  
+    .card_name2{
+        left: 30px;
+        top: 80px;
+        font-size: 15px;
+    } 
+    .card_date2{
+        left: 30px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .card_num3{
+        left: 30px;
+        top: 55px;
+        font-size: 15px;
+    }
+    
+    .card_name3{
+        left: 30px;
+        top: 80px;
+        font-size: 15px;
+    }
+    
+    .card_date3{
+        left: 30px;
+        top: 30px;
+        font-size: 15px;
+    }
+    .new_card{
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .crest1{
+        position: absolute;
+        top: 880px;
+        left: 630px ;
+     }
+     .crest2{
+        position: absolute;
+        top: 1090px;
+        left: 630px ;
+     }
+     .bank_name{
+         line-height: 20px;
+     }
+}
+
+@media(max-width:375px){
+    .sell_but{ 
+       position: absolute;
+       top: 210px;
+       left: 100px;
+    }
+    .all_card{
+        margin-top: 100px;
+    }
+    .crest1{
+        position: absolute;
+        top: 860px;
+        left: 630px ;
+     }
+     .crest2{
+        position: absolute;
+        top: 1060px;
+        left: 630px ;
+     }
+    .bank_name{
+        line-height: 17px;
+    }
+}
+@media(max-width:320px){
+    .sell_but{ 
+        position: absolute;
+        top: 260px;
+        left: 100px;
+     }
+     .card{
+        width: 90%;
+        left: 30px;
+    }
+    .card_2{
+        width: 90%;
+        left: 230px;
+    }
+    .card_3{
+        width: 90%;
+        left: 180px;
+        top: 240px;
+    }
+
+     .card_num{
+        left: 20px;
+        top: 53px;
+        font-size: 20px;
+    }
+    .card_name{
+        left: 20px;
+        top: 80px;
+        font-size: 20px;
+    }
+    .card_date{
+        left: 20px;
+        top: 25px;
+        font-size: 20px;
+    }
+    .card_num2{
+        left: 30px;
+        top: 55px;
+        font-size: 20px;
+    }  
+    .card_name2{
+        left: 30px;
+        top: 80px;
+        font-size: 20px;
+    } 
+    .card_date2{
+        left: 30px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .card_num3{
+        left: 30px;
+        top: 55px;
+        font-size: 20px;
+    }
+    
+    .card_name3{
+        left: 30px;
+        top: 80px;
+        font-size: 20px;
+    }
+    
+    .card_date3{
+        left: 30px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .add_new{
+      top: 100px;
+    }
+    .crest1{
+        top: 870px;
+        left: 530px ;
+     }
+     .crest2{
+        top: 1080px;
+        left: 530px ;
+     }
+     .bank_name{
+         line-height: 20px;
+     }
+     .name_bank{
+         margin-bottom: 20px;
+     }
+     .processed{
+        font-size: 20px;
+        margin-left:  180px;
+    } 
+}
+
