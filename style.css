@@ -11,13 +11,6 @@
     height: 203vh;
 }
 
-.container2{
-    max-width: 1250px;
-    margin: auto;
-    background-color: #fff;
-    height: 160vh;
-}
-
 img{
     max-width: 100%;
 }
@@ -27,10 +20,6 @@ img{
     height: 203vh;
 }
 
-.bg2{
-    background-color: #3E4759;
-    height: 160vh;
-}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -103,14 +92,6 @@ body{
     border-radius: 8px;
 }
 
-.order{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 48px;
-}
-
 .warning{
     display: flex;
     justify-content: space-between;
@@ -156,52 +137,12 @@ body{
     margin-bottom: 35px;
 }
 
-.flex-wrapper{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    bottom: 10px
-}
-
-
-
 .item-add{
     border: #596273 solid 1px;
     border-radius: 8px;
     color: #3E4759;
     padding: 7px 12px 8px 12px;
     margin-right: 12px;
-}
-
-.processed{
-    text-decoration: none;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.processed button{
-    border: none;
-    background-color: #475062;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 18px 35px 18px 37px;
-    border-radius: 8px;
-    margin-bottom: 48px;
-}
-
-.total{
-    max-width: 351px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #BBC4CE;
-    border-radius: 8px;
-    padding: 19px 17px 18px 18px;
-    margin-top: 15px;
-}
-
-.all-price{
-    margin-top: 6px;
 }
 
 .header_menu{ 
@@ -294,73 +235,6 @@ body{
 
 .none{
     display: none;
-}
-
-.but1 .but2{ 
-    font-family: Roboto Condensed;  
-    line-height: 14px; 
-    color: #252B35; 
-    margin-top: 65px;
-} 
- 
-.name-object{ 
-    margin: 50px 35px 23px 25px; 
-}
-
-.items{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 32px;
-}
-
-.item{
-    width: 800px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    border: 1px solid #F6F6F8;
-    border-radius: 11px;
-    padding: 3px 14px 2px 7px;
-    background-color: #F6F6F8;
-}
-
-.number-object{
-    margin: auto;
-}
-
-.price-object{
-    margin: auto;
-}
-
-.number-object input{
-    font-size: 15px;
-    font-weight: 400;
-    margin: 9px;
-    border: solid 1px #818A99;
-    border-radius: 7px;
-    max-width: 30%;
-    padding: 6px ;
-}
-
-.price-object input{
-    border: solid 1px #818A99;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 9px;
-    border-radius: 7px;
-    max-width: 30%;
-    padding: 6px ;
-}
-
-.cancel-item{
-    position: relative;
-    left: 25px;
-    bottom: 35px;
-    width: 30px;
-    border: none
 }
 
 .last-adresses p{
@@ -506,4 +380,12 @@ body{
 
 .empty p{
     margin-top: 10px;
+}
+
+.order{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 48px;
 }

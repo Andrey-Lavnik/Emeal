@@ -11,7 +11,7 @@ burger.addEventListener('click',()=>{
 })
 
 
-const dedLine = '2022-05-13'
+const dedLine = '2022-06-08'
   function getTimeRemaining(endTime){
     const t = Date.parse(endTime) - Date.parse(new Date())
     const days = Math.floor(t/(1000*60*60*24));
