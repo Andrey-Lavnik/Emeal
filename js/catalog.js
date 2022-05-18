@@ -43,6 +43,8 @@ fetch('./js/data.json')
     console.log(data);
   });
 
+
+// problem
 const but1 = document.querySelector('.but1').value;
 function cart(){
   
