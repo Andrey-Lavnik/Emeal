@@ -43,7 +43,10 @@ fetch('./js/data.json')
     console.log(data);
   });
 
-// const but1 = document.querySelector('.but1')
+const but1 = document.querySelector('.but1').value;
+function cart(){
+  
+}
 // const but2 = document.querySelector('.but2')
 // const nameObj = document.querySelector('.name-object')
 // let arr = []

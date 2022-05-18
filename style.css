@@ -389,3 +389,12 @@ body{
     font-size: 14px;
     margin-bottom: 48px;
 }
+
+@media(max-width: 1440px){
+    .container{
+        height: 230vh;
+    }
+    .bg{
+        height: 230vh;
+    }
+}
