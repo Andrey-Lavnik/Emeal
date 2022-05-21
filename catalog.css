@@ -280,3 +280,105 @@ body{
     font-size: 14px;
     margin-bottom: 48px;
 }
+
+@media(max-width:768px){
+    .header_menu{
+        left:680px
+    }
+    
+    .item{
+        width: 500px;
+    }
+
+    .sidebar{
+        width: 30%;
+    }
+    .sidebar ul{
+        padding: 40px 10px 40px 10px;
+    }
+    .sidebar ul li a{
+        font-size: 30px;
+        padding: 3px 10px;
+    }
+        
+    
+
+}
+
+@media(max-width:425px){
+    .header_menu{
+        left:380px
+    }
+    
+    .item{
+        width: 300px;
+    }
+    
+    .cancel-item{
+        
+    }
+
+    .sidebar{
+        width: 30%;
+        z-index: 1;
+    }
+    .sidebar ul{
+        padding: 40px 10px 40px 0px;
+    }
+    .sidebar ul li a{
+        font-size: 20px;
+        padding: 3px 5px;
+    }
+
+    .sidebar ul li a:hover{
+        letter-spacing: 2px;
+    }
+
+    .number-object input{
+        margin: 50px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+    img{
+        position: relative;
+        top:10px;
+        width:200px;
+       height: 100px;
+    }
+
+    .number-object{
+        width: 100px;
+    }
+
+    .name-object{
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .total{
+        width: 300px;
+    }
+
+    .charity{
+        width: 50%;
+    }
+        
+    
+
+}
+
+@media(max-width:375px){
+    .header_menu{ 
+        width: 50px;
+        left: 300px
+    } 
+
+    .sidebar{
+        width: 35%;
+        z-index: 1;
+    }
+
+}
+
