@@ -79,6 +79,7 @@ body {
     height: 100%;
     background: rgba(0,0,0,.95);
     transition: 0.5s;
+    z-index: 1;
 }
 
 .sidebar.active{
@@ -89,7 +90,7 @@ body {
     margin: 0;
     padding: 0;
     transition: 0.5s;
-    padding: 40px;
+    padding: 40px 10px;
     transform: translateX(-100px);
 }
 
@@ -142,11 +143,15 @@ body {
 h1 {
     text-align: center;
     margin-top: 50px;
+    font-size: 50px;
 }
 
 .specical {
     font-size: 15px;
     color: slategrey;
+    margin-left: 30px;
+    margin-top: 20px;
+    
 }
 
 .sell_drink {
@@ -161,6 +166,36 @@ h1 {
 
 .chypa {
     width: 300px;
+    padding-bottom: 40px;
+}
+.milk{
+    width: 300px;
+    padding: 50px;
+}
+.sugar{
+    width: 300px;
+    padding: 50px;
+}
+
+.cake{
+    width: 300px;
+    padding: 50px;
+    padding-bottom: 110px;
+}
+
+.cheese{
+    width: 300px;
+    padding: 50px;
+}
+
+.cookie{
+    width: 300px;
+    padding: 50px;
+}
+
+.cakes{
+    width: 300px;
+    padding: 50px;
 }
 
 .drink_1 {
@@ -192,6 +227,7 @@ h1 {
     width: 88px;
     left: 65px;
     top: -25px;
+    
 }
 
 .cart {
@@ -210,4 +246,246 @@ h1 {
     padding: 10px 40px;
     font-size: 20px;
     border-radius: 5px;
+}
+
+.sale{
+   
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+@media(max-width: 1024px){
+    .header_menu{
+        left: 970px
+    }
+    .sidebar ul li a{
+        font-size: 33px;
+        padding: 0 0 0 5px;
+    }
+}
+@media(max-width: 768px){
+    .header_menu{
+        left: 670px
+    }
+    .sidebar ul li a{
+        font-size: 23px;
+        padding: 0 0 0 5px;
+    }
+    .sidebar{
+        width: 25%;
+    }
+    .aloe {
+        width: 200px;
+    }
+    
+    .chypa {
+        width: 200px;
+        padding-bottom: 20px;
+    }
+    .milk{
+        width: 200px;
+        padding: 50px;
+    }
+    .sugar{
+        width: 200px;
+        padding: 50px;
+    }
+    
+    .cake{
+        width: 200px;
+        padding: 50px;
+        padding-bottom: 80px;
+    }
+    
+    .cheese{
+        width: 200px;
+        padding: 50px;
+    }
+    
+    .cookie{
+        width: 200px;
+        padding: 50px;
+    }
+    
+    .cakes{
+        width: 200px;
+        padding: 50px;
+    }
+    
+    .drink_1 {
+        background-color: rgb(224, 229, 233);
+        border-radius: 10px;
+        border: 2px black solid;
+        padding: 10px;
+    }
+    
+    .drink_2 {
+        background-color: rgb(224, 229, 233);
+        border-radius: 10px;
+        border: 2px black solid;
+        padding: 10px;
+    }
+    
+    .drink_1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .drink_2 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .line {
+        position: relative;
+        width: 58px;
+        left: 45px;
+        top: -20px;
+        
+    }
+    
+    .cart {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pod_cart {
+        cursor: pointer;
+        background-color: rgb(32, 218, 32);
+        background-image: url(images/cart.png);
+        background-size: 20px;
+        background-position-x: 110px;
+        background-position-y: 10px;
+        background-repeat: no-repeat;
+        padding: 10px 30px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width: 425px){
+    .h1{
+        font-size: 10px;
+    }
+    .specical {
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: 20px;
+        
+    }
+    .header_menu{
+        left: 370px
+    }
+    .sidebar ul li a{
+        font-size: 23px;
+        padding: 0 0 0 5px;
+    }
+    .sidebar ul li a:hover{
+        letter-spacing: 1px;
+    }
+    .sidebar{
+        width: 35%;
+    }
+    .aloe {
+        padding-top: 20px;
+        width: 160px;
+    }
+    
+    .chypa {
+        width: 160px;
+        padding-bottom: 60px;
+    }
+    .milk{
+        width: 180px;
+        padding: 40px;
+        padding-left: 20px;
+        
+    }
+    .sugar{
+        width: 180px;
+        padding: 40px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .cake{
+        width: 180px;
+        padding: 40px;
+        padding-left: 20px;
+        padding-bottom: 80px;
+    }
+    
+    .cheese{
+        width: 180px;
+        padding: 40px;
+        padding-left: 20px;
+
+    }
+    
+    .cookie{
+        width: 180px;
+        padding: 40px;
+        padding-left: 20px;
+
+    }
+    
+    .cakes{
+        width: 180px;
+        padding: 40px;
+        padding-left: 20px;
+
+    }
+    
+    .drink_1 {
+        background-color: rgb(224, 229, 233);
+        border-radius: 10px;
+        border: 2px black solid;
+        padding: 10px;
+        width: 180px;
+    }
+    
+    .drink_2 {
+        background-color: rgb(224, 229, 233);
+        border-radius: 10px;
+        border: 2px black solid;
+        padding: 10px;
+        width: 180px;
+    }
+    
+    .drink_1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .drink_2 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .line {
+        position: relative;
+        width: 58px;
+        left: 45px;
+        top: -20px;
+        
+    }
+    
+    .cart {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pod_cart {
+        cursor: pointer;
+        background-color: rgb(32, 218, 32);
+        background-image: url(images/cart.png);
+        background-size: 20px;
+        background-position-x: 110px;
+        background-position-y: 10px;
+        background-repeat: no-repeat;
+        padding: 10px 30px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
 }
