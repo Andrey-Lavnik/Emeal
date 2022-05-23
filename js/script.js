@@ -72,5 +72,9 @@ addToCart.forEach((item)=>{
   }) 
 })
 
-
-
+class Test {
+    
+  static loc = localStorage
+}
+localStorage.setItem('Svyat','Vitun')
+export {Test}

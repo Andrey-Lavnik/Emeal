@@ -49,8 +49,15 @@ const but1 = document.querySelector('.but1').value;
 function cart(){
   
 }
-// const but2 = document.querySelector('.but2')
-// const nameObj = document.querySelector('.name-object')
-// let arr = []
-// arr.push(but1.value , but2.value)
-// localStorage.setItem('Cini minis',arr)
+
+
+
+
+
+import {Test} from "./script.js"
+
+console.log(Test.loc)
+
+console.log(localStorage)
+
+
