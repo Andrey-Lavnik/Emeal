@@ -10,16 +10,7 @@ burger.addEventListener('click',()=>{
     } 
 })
 
-// const modal = document.querySelector('.modal')
-// const btnModal = document.querySelector('.processed')
-// btnModal.addEventListener('click',()=>{
-//     modal.classList.remove('none')
-// }) 
 
-// const btnClose = document.querySelector('.btn-close')
-// btnClose.addEventListener('click',()=>{
-//     modal.classList.add('none')
-// }) 
 
 const cancelBtn = document.querySelectorAll('.cancel-item')
 const items = document.querySelector('.items')
@@ -44,20 +35,7 @@ fetch('./js/data.json')
   });
 
 
-// problem
-const but1 = document.querySelector('.but1').value;
-function cart(){
-  
-}
 
 
-
-
-
-import {Test} from "./script.js"
-
-console.log(Test.loc)
-
-console.log(localStorage)
 
 

@@ -115,11 +115,11 @@ body{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 50px;
 }
 
 .item{
-    width: 800px;
+    width: 700px;
     margin: auto;
     display: flex;
     justify-content: center;
