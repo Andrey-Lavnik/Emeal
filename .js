@@ -14,5 +14,3 @@ closeModal.addEventListener('click', () =>{
     modal.classList.remove('active')
 })
 
-
-
