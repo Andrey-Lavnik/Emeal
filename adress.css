@@ -169,9 +169,10 @@ p{
    
 }
 .add6{
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center
+    justify-content: space-evenly
+    
 }
 img{
     position: relative;
@@ -195,7 +196,7 @@ width: 30px;
     width: 400px;
     cursor: pointer;
     width: 400px;
-    margin-left: 40px;
+ 
     margin-bottom: 30px;
 
     padding-top: 123px;
@@ -210,88 +211,6 @@ width: 30px;
     
     transition: 0.25s;
 }
-.add2:hover{
-    background:  #67D4C7;
-   
-    
-}
-.add2{
-    cursor: pointer;
-    background-color: white;
-    width: 400px;
-    margin-left: 40px;
-    margin-bottom: 30px;
-
-    padding-top: 123px;
-    padding-bottom: 88px;
-    padding-left: 22px;
-    padding-right: 20px;
-
-    border: 1px solid #54BDB0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    transition: 0.25s;
-}
-.add3:hover{
-    background:  #67D4C7;
-   
-    
-}
-.add3{
-    cursor: pointer;
-    width: 400px;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    transition: 0.25s;
-    padding-top: 123px;
-    padding-bottom: 88px;
-    padding-left: 22px;
-    padding-right: 20px;
-    background-color: white;
-    border: 1px solid #54BDB0;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-.add4:hover{
-    background:  #67D4C7;
-   
-    
-}
-.add4{
-    cursor: pointer;
-    width: 400px;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    background-color: white;
-    padding-top: 123px;
-    padding-bottom: 88px;
-    padding-left: 22px;
-    padding-right: 20px;
-    transition: 0.25s;
-    border: 1px solid #54BDB0;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-.add5:hover{
-    background:  #67D4C7;
-   
-    
-}
-.add5{
-    cursor: pointer;
-    width: 400px;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    background-color: white;
-    padding-top: 123px;
-    padding-bottom: 88px;
-    padding-left: 22px;
-    padding-right: 20px;
-    transition: 0.25s;
-    border: 1px solid #54BDB0;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
 
 .your-adress{
     cursor: pointer;
@@ -302,7 +221,7 @@ width: 30px;
     background-size: 69px;
     width: 400px;
     transition: 0.25s;
-    margin-left: 40px;
+
     margin-bottom: 30px;
 
     padding-top: 193px;
@@ -501,7 +420,7 @@ width: 30px;
     }
     .add1{
         width: 280px;
-        margin-left: 40px;
+
         margin-bottom: 30px;
     
         padding-top: 123px;
@@ -512,63 +431,13 @@ width: 30px;
        
     
     }
-    .add2{
-   
-        width: 280px;
-        margin-left: 40px;
-        margin-bottom: 30px;
-    
-        padding-top: 123px;
-        padding-bottom: 88px;
-        padding-left: 22px;
-        padding-right: 20px;
-    
-      
-       
-    }
-    
-    .add3{
-        width: 280px;
-        margin-left: 40px;
-        margin-bottom: 30px;
-    
-        padding-top: 123px;
-        padding-bottom: 88px;
-        padding-left: 22px;
-        padding-right: 20px;
-        
-    }
-    
-    .add4{
-        width: 280px;
-        margin-left: 40px;
-        margin-bottom: 30px;
-        
-        padding-top: 123px;
-        padding-bottom: 88px;
-        padding-left: 22px;
-        padding-right: 20px;
-    
-      
-    }
-    .add5{
-        width: 280px;
-        margin-left: 40px;
-        margin-bottom: 30px;
-       
-        padding-top: 123px;
-        padding-bottom: 88px;
-        padding-left: 22px;
-        padding-right: 20px;
-    
-       
-    }
+
     .your-adress{
         width: 280px;
         background-size: 59px;
        
     
-        margin-left: 40px;
+
         margin-bottom: 30px;
     
         padding-top: 193px;
@@ -624,8 +493,7 @@ width: 30px;
     .add1{
         font-size: 10px;
         width: 130px;
-        margin-left: 40px;
-        margin-bottom: 30px;
+
     
         padding-top: 23px;
         padding-bottom: 88px;
@@ -644,7 +512,7 @@ width: 30px;
         background-size: 39px;
        
     
-        margin-left: 40px;
+
         margin-bottom: 30px;
     
         padding-top: 22px;
@@ -659,7 +527,7 @@ width: 30px;
     }
 
     .button a{
-        margin-left: 40px;
+
         padding: 25px 40px 25px 40px;
         font-size: 10px;
         background: #475062;
@@ -740,4 +608,31 @@ width: 30px;
     background-color: rgba(0, 0, 0, .5);
 }
    
+}
+
+@media(max-width:375px){
+    .header_menu{
+        left:310px
+    }
+}
+
+@media(max-width:320px){
+    .header_menu{
+        left:250px
+    }
+    h1{
+        font-size: 20px;
+    }
+    p.inter{
+        font-size: 10px;
+        width: 250px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .sidebar{
+        width: 45%;
+    }
+    .sidebar ul li a{
+        padding-right: 10px;
+    }
 }
