@@ -1,0 +1,29 @@
+{
+    "banks":[             
+        {
+            "name":"United Bank of Asia",
+            "bank.number":"00002568952"
+        },
+        {
+            "name":"AWS Bank",
+            "bank.number":"00002568952"
+        }
+    ],
+    "cards":[
+        {
+            "name":"visa"
+        },
+        {
+            "name":"Union Pay"
+        },
+        {
+            "name":"Western Union"
+        },
+        {
+            "name":"Maestro"
+        }
+
+    ]
+}
+
+    

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select card</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header_menu">
+            <span></span>
+        </div>
+        <div class="sidebar"> 
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="catalog.html">Basket</a></li> 
+                <li><a href="adress.html">Adress</a></li> 
+                <li><a href="promotion.html">Promotion</a></li> 
+            </ul> 
+        </div>
+        <h1>Select your payment options</h1>
+        <h2>Your Saved Cards</h2>
+        <div class="promotion__timer">
+            <div class="timer">
+                <div class="timer__block">
+                    <span id="days">12</span>
+                    дней
+                </div>
+                <div class="timer__block">
+                    <span id="hours">20</span>
+                    часов
+                </div>
+                <div class="timer__block">
+                    <span id="minutes">56</span>
+                    минут
+                </div>
+                <div class="timer__block">
+                    <span id="seconds">20</span>
+                    секунд
+                </div>
+            </div>
+            <div class="sell_button"> 
+                <form action="promotion.html"> 
+                    <button class="sell_but">Promotion</button> 
+                </form> 
+            </div>
+        </div>
+        <div class="all_card">
+        <div class="card">
+            <img class="img_1" src="images/back_1.svg" alt="bankcard">
+            <div class="card_num">xxxx xxxx xxxx 5689</div>
+            <div class="card_name">Phillip Smith</div>
+            <div class="card_date">02/2025</div>
+         </div>
+         <div class="card_2">
+            <img class="img_2" src="images/back_2.svg" alt="bankcard">
+            <div class="card_num2">xxxx xxxx xxxx 1983</div>
+            <div class="card_name2">Natasha Black</div>
+            <div class="card_date2">02/2025</div>
+         </div>
+         <div class="card_3">
+            <img class="img_1" src="images/back_1.svg" alt="bankcard">
+            <div class="card_num3">xxxx xxxx xxxx 4915</div>
+            <div class="card_name3">Natasha  Whith</div>
+            <div class="card_date3">02/2025</div>
+         </div>
+        </div>
+         <button class="add_new">add new card</button>
+         <h2 class="others">Other payment options</h2>
+         <div class="all_banks1">
+             <div class="img_bank1">
+                <img class="bank1" src="images/bank_1.svg" alt="">
+            </div>
+            <div class="bank_text1">
+                <p class="bank_name">United Bank Of Asia</p>
+                <p class="bank_number">00002568952</p>
+            </div>
+            <div class="crest1">&#10006</div>  
+         </div>
+         <div class="all_banks2">
+             <div class="img_bank2">
+                <img class="bank2" src="images/bank_2.svg" alt="">
+            </div>
+            <div class="bank_text2">
+                <p class="bank_name">AWS Bank</p>
+                <p class="bank_number">00002568952</p>
+            </div>
+             <p class="crest2">&#10006</p>
+         </div>
+         <div class="names_of_banks">
+            <a><img class="name_bank" src="images/visa.svg" alt=""></a>
+            <a><img class="name_bank" src="images/union.svg" alt=""></a>
+            <a><img class="name_bank" src="images/wastern.svg" alt=""></a>
+            <a><img class="name_bank" src="images/maestro.svg" alt=""></a>
+            <a><img class="name_bank" src="images/new_card.svg" alt=""></a>
+        </div>
+        <button class="processed" id="open_modal"><p>Processed for Payment</p></button>
+        <div class="modal none" id="modal">
+            <div class="modal_container">
+                <div class="modal_body" id="modal_body">
+                   <h1 class="sending">Payment completed</h1>
+                   <p class="code">thanks for using us</p>
+                    <form action="selectcard.html">
+                         <button>Ok</button>
+                    </form>
+                    <div class="modal_close" id="close_modal">&#10006</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="card.js"></script>
+</body>
+</html>
