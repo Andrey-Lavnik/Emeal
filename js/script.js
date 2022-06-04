@@ -58,17 +58,29 @@ const dedLine = '2022-06-08'
 };
 setClock('.timer',dedLine)
 
-const addToCart = document.querySelectorAll('.pod_cart') 
-addToCart.forEach((item)=>{ 
+const addToCartButtonChange = document.querySelectorAll('.pod_cart') 
+addToCartButtonChange.forEach((item)=>{ 
   item.addEventListener('click', ()=>{  
       if(item.classList.contains('added')){ 
         item.textContent = ('Add to cart')
         item.classList.remove('added')
       }else{
         item.textContent = ('Added')
-        item.classList.add('added')   
-      } 
+        item.classList.add('added')
        
+      }  
   }) 
 })
+
+
+
+
+function toStorage(){
+  const addTest = document.querySelector('#test').innerHTML
+  for(let key of addTest){
+    data = JSON.stringify(key)
+    return localStorage.setItem(data,data)
+  }
+  
+}
 
